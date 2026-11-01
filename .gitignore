@@ -1,2 +1,5 @@
 # Keep CV off the public site
 *.pdf
+
+# ...except files published on purpose
+!assets/files/*.pdf

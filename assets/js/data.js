@@ -11,7 +11,7 @@ const SITE = {
     scholar: "https://scholar.google.com/citations?user=jrtXgKgAAAAJ&hl=en",
     github: "https://github.com/ziqicui001",
     linkedin: "https://www.linkedin.com/in/ziqi-cui-247312236/",
-    portfolio: "https://issuu.com/cuiziqi1",
+    portfolio: "assets/files/portfolio-ziqi-cui.pdf",
   },
 };
 
@@ -19,7 +19,7 @@ const SITE = {
 const NEWS = [
   { date: "2026", text: "Received an <b>ACM SIGSPATIAL Travel Grant</b> to attend SIGSPATIAL 2026." },
   { date: "2026-08", text: "Our paper <i>PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment</i> has been accepted as a research paper (short) at <b>ACM SIGSPATIAL 2026</b>.", link: "https://arxiv.org/abs/2608.24133" },
-  { date: "2026-03", text: "Two oral presentations at <b>AAG 2026</b> in San Francisco: semantic geospatial retrieval of urban outdoor spaces with MLLMs, and OSINT-based LLM multi-agent systems for human mobility prediction." },
+  { date: "2026-03", text: "Oral presentation at <b>AAG 2026</b> in San Francisco on semantic geospatial retrieval of urban outdoor spaces with MLLMs." },
   { date: "2026", text: "Book chapter <i>Impact of varying street view perspectives on urban perception: The case of Celoria Street in Milan</i> published by <b>Springer</b>.", link: "https://doi.org/10.1007/978-3-032-04711-3_24" },
   { date: "2025-10", text: "Sponsored participant at the <b>Mobile Brain/Body Imaging (MoBI) Workshop</b> at TU Berlin with Prof. Klaus Gramann." },
   { date: "2025-07", text: "Awarded a <b>COST (European Cooperation in Science & Technology) Grant</b> to give an oral presentation at CitySenZ 2025 in Lisbon." },
@@ -27,7 +27,8 @@ const NEWS = [
   { date: "2025-04", text: "Paper on built environment and sexual violence against women in Mumbai published in <b>Humanities and Social Sciences Communications</b>.", link: "https://doi.org/10.1057/s41599-025-04838-4" },
   { date: "2025-04", text: "Exhibited <i>ACTUATED KNIT // TEXTILEMORPHOSIS</i> at <b>Milano Design Week 2025</b>." },
   { date: "2025-03", text: "Oral presentation at <b>CAADRIA 2025</b>, The University of Tokyo, on explainable GNN models of street perception.", link: "https://doi.org/10.52842/conf.caadria.2025.4.459" },
-  { date: "2024-11", text: "Presented at <b>ACSP 2024</b> (Seattle) and the <b>Future of Construction Conference</b> (ETH Zürich)." },
+  { date: "2024-11", text: "Oral presentation at <b>ACSP 2024</b> (Seattle) on the spatial-temporal impact of the built environment on women's safety in Mumbai." },
+  { date: "2024-11", text: "Poster <i>“Flow along the corridor” — a GAN-based floor plan generator</i> presented at the <b>Future of Construction Conference 2024</b>, ETH Zürich.", link: "assets/files/gan-floorplan-poster.pdf" },
 ];
 
 /* ---------- Publications ----------
@@ -111,7 +112,7 @@ const PUBLICATIONS = [
 
 /* ---------- Conference presentations ---------- */
 const TALKS = [
-  { kind: "Upcoming", title: "Beyond Physical Space: Learning Human-Centered Place Representations from Sparse Experience Narratives", authors: "**Ziqi Cui**", venue: "AAG 2027", place: "New York, USA", date: "2027" },
+  { kind: "Upcoming", title: "Beyond Physical Space: Learning Human-Centered Place Representations from Sparse Experience Narratives", authors: "**Ziqi Cui**+*, Shangyu Lou+", venue: "AAG 2027", place: "New York, USA", date: "2027" },
   { kind: "Oral", title: "Semantic Geospatial Retrieval of Urban Outdoor Spaces: Aligning Subjective Affective Needs with MLLM", authors: "**Ziqi Cui**+*, Shangyu Lou+", venue: "AAG 2026", place: "San Francisco, USA", date: "2026.03" },
   { kind: "Oral", title: "Enhancing Human Mobility Prediction through an OSINT-Based LLM Multi-Agent System", authors: "Shangyu Lou+*, **Ziqi Cui**+", venue: "AAG 2026", place: "San Francisco, USA", date: "2026.03" },
   { kind: "Oral", title: "In-motion Urban Ambiances: Assessing Walkability and Safety Perception Through Immersive VR Simulation", authors: "Barbara Ester Adele Piga+*, **Ziqi Cui**, Gabriele Stancato, Andrea Picardi, Simone Piersigilli, Lorenzo Mussone, Marco Boffi, Carlotta Colonna, Chiara Maninetti, Riccardo Barbieri, Luca Mainardi, Giandomenico Caruso", venue: "CitySenZ 2025", place: "Lisbon, Portugal", date: "2025.07" },
@@ -216,6 +217,7 @@ const PROJECTS = [
     img: "assets/img/3c85d162.jpg",
     summary: "A generative adversarial network that learns corridor-driven spatial organization to generate architectural floor plans. Presented as a poster at the Future of Construction Conference 2024, ETH Zürich.",
     people: "Ziqi Cui · Supervisor: Oana Taut",
+    links: { Poster: "assets/files/gan-floorplan-poster.pdf" },
   },
   {
     id: "portfolio", group: "previous",
@@ -224,7 +226,7 @@ const PROJECTS = [
     funding: "Selected design work",
     img: "assets/img/d0351757.png",
     summary: "Selected architecture and computational design work from my studies in China, Italy and Spain.",
-    links: { Issuu: "https://issuu.com/cuiziqi1" },
+    links: { PDF: "assets/files/portfolio-ziqi-cui.pdf" },
   },
   {
     id: "vrwalk", group: "lab",
@@ -261,7 +263,7 @@ const PROJECTS = [
 /* ---------- CV sections ---------- */
 const EDUCATION = [
   { org: "The University of British Columbia", detail: "Ph.D. Student", date: "Sep. 2026 – present", place: "Vancouver, Canada" },
-  { org: "Institute for Advanced Architecture of Catalonia (IAAC) – UPC", detail: "M.Sc. Advanced Computation for Architecture & Design", date: "2022 – 2023", place: "Barcelona, Spain" },
+  { org: "IAAC – Universitat Politècnica de Catalunya (UPC)", detail: "M.Sc. Advanced Computation for Architecture & Design", date: "2022 – 2023", place: "Barcelona, Spain" },
   { org: "Politecnico di Milano", detail: "M.Sc. Architecture – Built Environment – Interiors · 110/110", date: "2020 – 2023", place: "Milan, Italy" },
   { org: "Shanxi University", detail: "B.Eng. Architecture", date: "2015 – 2020", place: "Taiyuan, China" },
 ];
@@ -273,12 +275,12 @@ const EXPERIENCE = [
 ];
 
 const HONORS = [
-  { text: "Canada Impact+ Research Training Award (Doctoral)", detail: "Natural Sciences and Engineering Research Council of Canada (NSERC) · Track: Advanced digital technologies (AI, quantum, cybersecurity)", link: "https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-impact-plus-research-training-awards.aspx", date: "Sep. 2026" },
-  { text: "Four Year Doctoral Fellowship (4YF), The University of British Columbia", link: "https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf", date: "Sep. 2026" },
+  { text: "Canada Impact+ Research Training Award (Doctoral)", detail: "Natural Sciences and Engineering Research Council of Canada (NSERC) · Track: Advanced digital technologies (AI, quantum, cybersecurity)", date: "Sep. 2026" },
+  { text: "Four Year Doctoral Fellowship (4YF), The University of British Columbia", date: "Sep. 2026" },
   { text: "ACM SIGSPATIAL Travel Grant", date: "2026" },
   { text: "COST (European Cooperation in Science & Technology) Grant", date: "Jul. 2025" },
   { text: "NextGenerationEU Research Scholarship (MED4PED)", date: "Feb. 2024" },
-  { text: "Graduated with Full Marks, Politecnico di Milano", date: "Oct. 2023" },
+  { text: "Graduated with Full Marks and Honors, Politecnico di Milano", date: "Oct. 2023" },
   { text: "Erasmus+ Scholarship", date: "Jun. 2022" },
 ];
 

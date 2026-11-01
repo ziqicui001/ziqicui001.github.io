@@ -96,7 +96,7 @@ function projectItem(p, withGallery) {
       <h3>${p.title}</h3>
       <div class="chips">${tags}</div>
       <p class="project-summary">${p.summary}</p>
-      ${p.people ? `<p class="pub-authors">${p.people}</p>` : ""}
+      ${p.people && p.group !== "research" ? `<p class="pub-authors">${p.people}</p>` : ""}
       <p>${linkList(p.links)}</p>
       ${gallery}
     </div>

@@ -115,6 +115,16 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 40px; position: r
 .contact-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; }
 .contact-links a { display: inline-flex; align-items: center; gap: 7px; font-weight: 500; }
 .contact-links i { width: 18px; text-align: center; }
+.wechat {
+  position: relative; display: inline-flex; align-items: center; gap: 7px;
+  font: inherit; font-weight: 500; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer;
+}
+.qr-pop {
+  display: none; position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); z-index: 20;
+  width: max-content; background: #fff; padding: 6px; border-radius: 10px; box-shadow: 0 10px 30px rgba(27,21,40,.22);
+}
+.qr-pop img { display: block; width: 180px; max-width: none; height: auto; }
+.wechat:hover .qr-pop, .wechat:focus .qr-pop, .wechat:focus-within .qr-pop { display: block; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--accent); color: #fff !important; font-weight: 600;
@@ -264,3 +274,7 @@ footer {
   .about p { text-align: left; }
   .tl-row, .plain li { flex-direction: column; gap: 0; }
 }
+
+/* Visitor map */
+.visitor-map { display: flex; justify-content: center; max-width: 100%; overflow: hidden; }
+.visitor-map img, .visitor-map canvas { max-width: 100%; height: auto; }
