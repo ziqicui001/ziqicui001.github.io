@@ -70,7 +70,7 @@ function renderTalks(el) {
     (t) => `
     <li>
       <div class="talk-main">
-        <span class="badge ${t.kind === "Poster" ? "badge-alt" : ""}">${t.kind}</span>
+        <span class="badge ${t.kind === "Poster" ? "badge-alt" : t.kind === "Upcoming" ? "badge-upcoming" : ""}">${t.kind}</span>
         <b>${t.title}</b>
         <div class="talk-authors">${fmtAuthors(t.authors)}</div>
       </div>

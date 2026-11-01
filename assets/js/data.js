@@ -40,14 +40,14 @@ const PUBLICATIONS = [
     title: "PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment",
     authors: "**Ziqi Cui**+*, Shangyu Lou+",
     venue: "Accepted as a Research Paper (short) at ACM SIGSPATIAL 2026",
-    img: "assets/img/placeseek.jpg",
+    img: "assets/img/placeseek-framework.jpg",
     links: { arXiv: "https://arxiv.org/abs/2608.24133" },
   },
   {
     type: "conference", year: "2026", selected: true,
     title: "Enhancing Human Mobility Prediction with Spatially Aware LLM-based Multi-Agent Systems",
     authors: "Shangyu Lou+*, **Ziqi Cui**+",
-    venue: "Proceedings of the Workshop on Human-In-the-Loop Data Analytics (HILDA '26), ACM, pp. 28–34, 2026",
+    venue: "Proceedings of the 2026 ACM SIGMOD Conference Workshop on Human-In-the-Loop Data Analytics (HILDA '26), pp. 28–34",
     img: "assets/img/hilda.jpg",
     links: { Paper: "https://doi.org/10.1145/3814573.3814949" },
   },
@@ -55,12 +55,20 @@ const PUBLICATIONS = [
     type: "journal", year: "2026", selected: true,
     title: "How Urban Micro-Scale Built Environment Influences Perceived Walkability: An NLP-based Literature Review",
     authors: "**Ziqi Cui**+, Barbara Ester Adele Piga*",
-    venue: "Under review, Building and Environment",
+    venue: "Under review, Transport Reviews",
     img: "assets/img/8fd5eab5.jpg",
     links: {},
   },
   {
-    type: "chapter", year: "2026", selected: true,
+    type: "journal", year: "2026", selected: false,
+    title: "From Walkability to Walking Experience: Perceived Safety and Affective Responses to Intersection Redesign in Immersive Virtual Reality",
+    authors: "Barbara Ester Adele Piga*, Giandomenico Caruso, Carlotta Colonna, Gabriele Stancato, Nicola Rainisio, Lorenzo Mussone, Andrea Picardi, Simone Piersigilli, **Ziqi Cui**, Marco Boffi",
+    venue: "Under review, Cities",
+    icon: "fa-vr-cardboard",
+    links: {},
+  },
+  {
+    type: "chapter", year: "2026", selected: false,
     title: "Impact of Varying Street View Perspectives on Urban Perception: The Case of Celoria Street in Milan",
     authors: "**Ziqi Cui**+, Barbara Ester Adele Piga*, Gabriele Stancato",
     venue: "Digital Innovations in Architecture, Engineering and Construction, Springer, 2026",
@@ -103,6 +111,7 @@ const PUBLICATIONS = [
 
 /* ---------- Conference presentations ---------- */
 const TALKS = [
+  { kind: "Upcoming", title: "Beyond Physical Space: Learning Human-Centered Place Representations from Sparse Experience Narratives", authors: "**Ziqi Cui**", venue: "AAG 2027", place: "New York, USA", date: "2027" },
   { kind: "Oral", title: "Semantic Geospatial Retrieval of Urban Outdoor Spaces: Aligning Subjective Affective Needs with MLLM", authors: "**Ziqi Cui**+*, Shangyu Lou+", venue: "AAG 2026", place: "San Francisco, USA", date: "2026.03" },
   { kind: "Oral", title: "Enhancing Human Mobility Prediction through an OSINT-Based LLM Multi-Agent System", authors: "Shangyu Lou+*, **Ziqi Cui**+", venue: "AAG 2026", place: "San Francisco, USA", date: "2026.03" },
   { kind: "Oral", title: "In-motion Urban Ambiances: Assessing Walkability and Safety Perception Through Immersive VR Simulation", authors: "Barbara Ester Adele Piga+*, **Ziqi Cui**, Gabriele Stancato, Andrea Picardi, Simone Piersigilli, Lorenzo Mussone, Marco Boffi, Carlotta Colonna, Chiara Maninetti, Riccardo Barbieri, Luca Mainardi, Giandomenico Caruso", venue: "CitySenZ 2025", place: "Lisbon, Portugal", date: "2025.07" },
@@ -136,7 +145,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: "walkability", group: "research", selected: true,
+    id: "walkability", group: "research", selected: false,
     title: "LLM-based Review of Micro-Scale Walkability",
     tags: ["RAG–LLM Pipeline", "Knowledge Graph", "Walkability Index"],
     funding: "MUSA · NextGenerationEU",
@@ -155,7 +164,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: "syncperception", group: "research", selected: true,
+    id: "syncperception", group: "research", selected: false,
     title: "SyncPerception — GNN Perception Prediction & Design Plugin",
     tags: ["Graph Neural Network", "Explainable AI", "C# / PythonNet"],
     funding: "exp-EIA_D · Seed4Innovation",
@@ -175,7 +184,7 @@ const PROJECTS = [
     funding: "MUSA · NextGenerationEU",
     img: "assets/img/13d3df0c.jpg",
     summary: "A Python workflow that computes and visualizes 70+ morphological indicators across the Milan area. Hierarchical clustering reveals urban-form typologies (e.g., CittaStudi), and correlation and PCA analyses link UMM indicators to perception scores. Results are published as an interactive web map.",
-    people: "Ziqi Cui",
+    people: "Ziqi Cui, Barbara Ester Adele Piga",
     links: { "Web Map": "https://pinea.app.carto.com/map/0cbf2365-527b-44ea-877b-2662d93b8ec1" },
     gallery: [
       "assets/img/08050f08.jpg",
@@ -259,22 +268,22 @@ const EDUCATION = [
 
 const EXPERIENCE = [
   { org: "Politecnico di Milano · LABSIMURB", detail: "Research Fellow – Dept. Architecture & Urban Studies", date: "2024 – 2026" },
-  { org: "University of Milan", detail: "Research Collaborator – Dept. Computer Science", date: "2024 – 2026" },
+  { org: "University of Milan", detail: "Research Assistant – Dept. Computer Science", date: "2024 – 2026" },
   { org: "Guangzhou City Construction & Design Co.", detail: "Urban Planning Intern", date: "2019" },
 ];
 
 const HONORS = [
-  { text: "Canada Impact+ Research Training Award (Doctoral)", detail: "Natural Sciences and Engineering Research Council of Canada (NSERC) · Track: Advanced digital technologies (AI, quantum, cybersecurity)", link: "https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-impact-plus-research-training-awards.aspx", date: "2026" },
-  { text: "Four Year Doctoral Fellowship (4YF), The University of British Columbia", link: "https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf", date: "2026" },
+  { text: "Canada Impact+ Research Training Award (Doctoral)", detail: "Natural Sciences and Engineering Research Council of Canada (NSERC) · Track: Advanced digital technologies (AI, quantum, cybersecurity)", link: "https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-impact-plus-research-training-awards.aspx", date: "Sep. 2026" },
+  { text: "Four Year Doctoral Fellowship (4YF), The University of British Columbia", link: "https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf", date: "Sep. 2026" },
   { text: "ACM SIGSPATIAL Travel Grant", date: "2026" },
   { text: "COST (European Cooperation in Science & Technology) Grant", date: "Jul. 2025" },
   { text: "NextGenerationEU Research Scholarship (MED4PED)", date: "Feb. 2024" },
   { text: "Graduated with Full Marks, Politecnico di Milano", date: "Oct. 2023" },
-  { text: "Erasmus+ Scholarship — “Passion in Action”, Nantes", date: "Jun. 2022" },
+  { text: "Erasmus+ Scholarship", date: "Jun. 2022" },
 ];
 
 const TEACHING = [
   { role: "Teaching Assistant", text: "Urban Survey and Representation Studio (055696), Politecnico di Milano", date: "2024 – 2026" },
   { role: "Teaching Assistant", text: "Advanced Methodologies for Human-Centered Urban Design (061694), Politecnico di Milano", date: "2024" },
-  { role: "Thesis Co-supervisor", text: "3 M.Sc. theses on walkability, pedestrian attention (deep learning), and older adults' active travel", date: "2024 – present" },
+  { role: "Thesis Co-supervisor", text: "3 M.Sc. theses on walkability, pedestrian attention (deep learning), and older adults' active travel", date: "2024 – 2026" },
 ];

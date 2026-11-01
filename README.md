@@ -19,6 +19,8 @@ assets/css/style.css Styles
 - **Bio text:** edit the "About" section in `index.html`.
 - **Images:** put files in `assets/img/` and reference them as `"assets/img/name.jpg"`
   (Wix media ids like `"594421_xxx~mv2.jpg"` also work while the old Wix site exists).
+- **After changing data.js / main.js / style.css:** bump the `?v=YYYYMMDD` suffix on their
+  `<link>`/`<script>` tags in all three HTML files, so visitors' browsers don't keep the old cached copy.
 
 ## Preview locally
 
