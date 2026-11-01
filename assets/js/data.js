@@ -65,7 +65,7 @@ const PUBLICATIONS = [
     title: "From Walkability to Walking Experience: Perceived Safety and Affective Responses to Intersection Redesign in Immersive Virtual Reality",
     authors: "Barbara Ester Adele Piga*, Giandomenico Caruso, Carlotta Colonna, Gabriele Stancato, Nicola Rainisio, Lorenzo Mussone, Andrea Picardi, Simone Piersigilli, **Ziqi Cui**, Marco Boffi",
     venue: "Under review, Cities",
-    icon: "fa-vr-cardboard",
+    img: "assets/img/cities-vr-intersection.jpg",
     links: {},
   },
   {
