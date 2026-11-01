@@ -6,7 +6,7 @@
 
 const SITE = {
   name: "Ziqi Cui",
-  email: "ziqi.cui@polimi.it",
+  email: "ziqicui@student.ubc.ca",
   links: {
     scholar: "https://scholar.google.com/citations?user=jrtXgKgAAAAJ&hl=en",
     github: "https://github.com/ziqicui001",
@@ -17,6 +17,8 @@ const SITE = {
 
 /* ---------- News (newest first) ---------- */
 const NEWS = [
+  { date: "2026", text: "Received an <b>ACM SIGSPATIAL Travel Grant</b> to attend SIGSPATIAL 2026." },
+  { date: "2026-08", text: "Our paper <i>PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment</i> has been accepted as a research paper (short) at <b>ACM SIGSPATIAL 2026</b>.", link: "https://arxiv.org/abs/2608.24133" },
   { date: "2026-03", text: "Two oral presentations at <b>AAG 2026</b> in San Francisco: semantic geospatial retrieval of urban outdoor spaces with MLLMs, and OSINT-based LLM multi-agent systems for human mobility prediction." },
   { date: "2026", text: "Book chapter <i>Impact of varying street view perspectives on urban perception: The case of Celoria Street in Milan</i> published by <b>Springer</b>.", link: "https://doi.org/10.1007/978-3-032-04711-3_24" },
   { date: "2025-10", text: "Sponsored participant at the <b>Mobile Brain/Body Imaging (MoBI) Workshop</b> at TU Berlin with Prof. Klaus Gramann." },
@@ -35,11 +37,19 @@ const NEWS = [
 const PUBLICATIONS = [
   {
     type: "conference", year: "2026", selected: true,
-    title: "MoveMAS: Enhanced Human Mobility Prediction with Spatially-Aware via LLM-based Multi-Agent Systems",
+    title: "PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment",
+    authors: "**Ziqi Cui**+*, Shangyu Lou+",
+    venue: "Accepted as a Research Paper (short) at ACM SIGSPATIAL 2026",
+    img: "assets/img/placeseek.jpg",
+    links: { arXiv: "https://arxiv.org/abs/2608.24133" },
+  },
+  {
+    type: "conference", year: "2026", selected: true,
+    title: "Enhancing Human Mobility Prediction with Spatially Aware LLM-based Multi-Agent Systems",
     authors: "Shangyu Lou+*, **Ziqi Cui**+",
-    venue: "Under review, ACM SIGIR 2026",
-    icon: "fa-route",
-    links: { Manuscript: "https://drive.google.com/file/d/1BDCbF0o-UQxajQJkchk_Zf8F1iis1DTh/view?usp=sharing" },
+    venue: "Proceedings of the Workshop on Human-In-the-Loop Data Analytics (HILDA '26), ACM, pp. 28–34, 2026",
+    img: "assets/img/hilda.jpg",
+    links: { Paper: "https://doi.org/10.1145/3814573.3814949" },
   },
   {
     type: "journal", year: "2026", selected: true,
@@ -241,6 +251,7 @@ const PROJECTS = [
 
 /* ---------- CV sections ---------- */
 const EDUCATION = [
+  { org: "The University of British Columbia", detail: "Ph.D. Student", date: "Sep. 2026 – present", place: "Vancouver, Canada" },
   { org: "Institute for Advanced Architecture of Catalonia (IAAC) – UPC", detail: "M.Sc. Advanced Computation for Architecture & Design", date: "2022 – 2023", place: "Barcelona, Spain" },
   { org: "Politecnico di Milano", detail: "M.Sc. Architecture – Built Environment – Interiors · 110/110", date: "2020 – 2023", place: "Milan, Italy" },
   { org: "Shanxi University", detail: "B.Eng. Architecture", date: "2015 – 2020", place: "Taiyuan, China" },
@@ -249,12 +260,13 @@ const EDUCATION = [
 const EXPERIENCE = [
   { org: "Politecnico di Milano · LABSIMURB", detail: "Research Fellow – Dept. Architecture & Urban Studies", date: "2024 – 2026" },
   { org: "University of Milan", detail: "Research Collaborator – Dept. Computer Science", date: "2024 – 2026" },
-  { org: "Politecnico di Milano · Textiles Hub", detail: "Research Intern", date: "2023" },
-  { org: "Archiford Design Ltd.", detail: "Design Intern", date: "2022" },
-  { org: "Guangzhou City Construction & Design Co.", detail: "Architecture Intern", date: "2019" },
+  { org: "Guangzhou City Construction & Design Co.", detail: "Urban Planning Intern", date: "2019" },
 ];
 
 const HONORS = [
+  { text: "Canada Impact+ Research Training Award (Doctoral)", detail: "Natural Sciences and Engineering Research Council of Canada (NSERC) · Track: Advanced digital technologies (AI, quantum, cybersecurity)", link: "https://sshrc-crsh.canada.ca/en/funding/opportunities/canada-impact-plus-research-training-awards.aspx", date: "2026" },
+  { text: "Four Year Doctoral Fellowship (4YF), The University of British Columbia", link: "https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf", date: "2026" },
+  { text: "ACM SIGSPATIAL Travel Grant", date: "2026" },
   { text: "COST (European Cooperation in Science & Technology) Grant", date: "Jul. 2025" },
   { text: "NextGenerationEU Research Scholarship (MED4PED)", date: "Feb. 2024" },
   { text: "Graduated with Full Marks, Politecnico di Milano", date: "Oct. 2023" },

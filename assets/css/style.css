@@ -1,13 +1,13 @@
 :root {
-  --bg: #f4f6f5;
+  --bg: #f6f5f9;
   --card: #ffffff;
-  --text: #1f2523;
-  --muted: #5c6662;
-  --line: #e3e7e5;
-  --accent: #2f6f55;
-  --accent-soft: #e6f0eb;
-  --nav: rgba(24, 33, 30, 0.92);
-  --shadow: 0 1px 2px rgba(16, 24, 20, 0.04), 0 8px 24px rgba(16, 24, 20, 0.06);
+  --text: #1e1b27;
+  --muted: #625d70;
+  --line: #e7e4ee;
+  --accent: #5a3d99;
+  --accent-soft: #f0ebf8;
+  --nav: rgba(27, 21, 40, 0.92);
+  --shadow: 0 1px 2px rgba(30, 20, 50, 0.04), 0 8px 24px rgba(30, 20, 50, 0.06);
   --radius: 12px;
   --maxw: 1080px;
 }
@@ -45,7 +45,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .brand:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 4px; }
 .nav-links a {
-  color: #e8ecea; font-weight: 500; font-size: 15px;
+  color: #e9e5f2; font-weight: 500; font-size: 15px;
   padding: 7px 12px; border-radius: 8px;
 }
 .nav-links a:hover { background: rgba(255,255,255,.08); text-decoration: none; }
@@ -56,28 +56,30 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero {
   position: relative; overflow: hidden;
   padding: 140px 24px 90px;
-  background: #18211e;
+  background: #1b1528;
 }
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  opacity: .5;
+  opacity: .45; filter: grayscale(100%) contrast(1.1);
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(24,33,30,.55) 0%, rgba(24,33,30,.2) 45%, var(--bg) 100%);
+  background: linear-gradient(180deg, rgba(27,21,40,.7) 0%, rgba(45,30,80,.35) 45%, var(--bg) 100%);
 }
 .hero-inner { position: relative; z-index: 1; max-width: var(--maxw); margin: 0 auto; }
 .hero-kicker {
   display: flex; align-items: center; gap: 14px;
-  color: #cfe3d8; font-size: 13px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #d8ccf2; font-size: 13px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase;
 }
-.hero-kicker::before { content: ""; width: 44px; height: 1px; background: #9cc9b2; }
+.hero-kicker::before { content: ""; width: 44px; height: 1px; background: #b29de0; }
 .hero h1 {
   color: #fff; font-size: clamp(36px, 6.4vw, 72px); font-weight: 800;
   letter-spacing: -1.5px; margin: 18px 0 22px; max-width: 900px;
 }
-.hero p { color: #e9efec; font-size: clamp(16px, 2vw, 19px); max-width: 680px; margin: 0; }
+.hero p { color: #ece8f4; font-size: clamp(16px, 2vw, 19px); max-width: 680px; margin: 0; }
+.hero.compact { padding: 112px 24px 64px; }
+.hero.compact p { max-width: 760px; margin-top: 14px; }
 .hero.small { padding: 120px 24px 56px; }
 .hero.small h1 { font-size: clamp(32px, 5vw, 52px); margin-bottom: 12px; }
 
@@ -133,6 +135,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 40px; position: r
 .tl-row em, .plain em { white-space: nowrap; font-style: italic; }
 .plain li { padding: 5px 0; color: var(--text); }
 .plain li em { color: var(--muted); }
+.item-detail { display: block; font-size: 13px; color: var(--muted); margin-top: 1px; }
 .sub-title { font-size: 17px; font-weight: 700; margin: 0 0 14px; }
 
 /* ---------- News ---------- */
@@ -151,14 +154,14 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 40px; position: r
 }
 .pub:first-of-type { border-top: 0; }
 .pub-thumb {
-  border-radius: 8px; overflow: hidden; background: #f0f2f1;
+  border-radius: 8px; overflow: hidden; background: #f3f1f7;
   aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center;
   border: 1px solid var(--line);
 }
 .pub-thumb img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
 .thumb-placeholder {
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg, #e6f0eb, #cfe1d8); color: var(--accent); font-size: 44px;
+  background: linear-gradient(135deg, #f0ebf8, #ddd2f0); color: var(--accent); font-size: 44px;
 }
 .pub h3 { font-size: 19px; font-weight: 500; margin-bottom: 8px; }
 .pub p { margin: 0 0 4px; }
@@ -199,7 +202,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 40px; position: r
   display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
   color: #fff; background: var(--accent); padding: 1px 8px; border-radius: 4px; margin-right: 8px; vertical-align: 2px;
 }
-.badge-alt { background: #8a6d3b; }
+.badge-alt { background: #9a7a52; }
 
 /* ---------- Page TOC ---------- */
 .toc { display: flex; flex-wrap: wrap; gap: 8px; margin: -8px 0 24px; }

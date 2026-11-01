@@ -134,7 +134,11 @@ function renderTimeline(el, items) {
 
 function renderSimple(el, items) {
   el.innerHTML = items
-    .map((h) => `<li><span>${h.role ? `<b>${h.role}</b> · ` : ""}${h.text}</span><em>${h.date}</em></li>`)
+    .map((h) => {
+      const text = h.link ? `<a href="${h.link}" target="_blank" rel="noopener">${h.text}</a>` : h.text;
+      const detail = h.detail ? `<small class="item-detail">${h.detail}</small>` : "";
+      return `<li><span>${h.role ? `<b>${h.role}</b> · ` : ""}${text}${detail}</span><em>${h.date}</em></li>`;
+    })
     .join("");
 }
 

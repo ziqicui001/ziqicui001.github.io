@@ -11,7 +11,6 @@ projects.html        Research projects (with image galleries), previous works, l
 assets/js/data.js    ← ALL CONTENT lives here (news, publications, talks, projects, CV lists)
 assets/js/main.js    Rendering logic
 assets/css/style.css Styles
-assets/CV_Ziqi_Cui.pdf
 ```
 
 ## Updating content
