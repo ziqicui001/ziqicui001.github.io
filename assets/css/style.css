@@ -80,6 +80,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero p { color: #ece8f4; font-size: clamp(16px, 2vw, 19px); max-width: 680px; margin: 0; }
 .hero.compact { padding: 112px 24px 64px; }
 .hero.compact p { max-width: 760px; margin-top: 14px; }
+.hero.compact .hero-kicker { font-size: clamp(22px, 3.4vw, 34px); font-weight: 700; letter-spacing: 4px; color: #fff; gap: 18px; }
+.hero.compact .hero-kicker::before { width: 56px; height: 2px; }
+.collab-note {
+  display: flex; gap: 10px; align-items: flex-start; margin: 16px 0 4px; padding: 10px 14px;
+  background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 8px;
+}
+.collab-note i { color: var(--accent); margin-top: 4px; }
 .hero.small { padding: 120px 24px 56px; }
 .hero.small h1 { font-size: clamp(32px, 5vw, 52px); margin-bottom: 12px; }
 
@@ -112,6 +119,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 40px; position: r
 }
 .interests { margin: 6px 0 14px; padding-left: 20px; list-style: disc; }
 .interests li { margin-bottom: 6px; }
+.interests.focus { list-style: decimal; }
+.interests.focus li { margin-bottom: 10px; }
+.interests.focus li::marker { font-weight: 700; color: var(--accent); }
+.interests.focus span { color: var(--muted); }
 .contact-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; }
 .contact-links a { display: inline-flex; align-items: center; gap: 7px; font-weight: 500; }
 .contact-links i { width: 18px; text-align: center; }
