@@ -17,7 +17,7 @@ const SITE = {
 
 /* ---------- News (newest first) ---------- */
 const NEWS = [
-  { date: "2026", text: "Received an <b>ACM SIGSPATIAL Travel Grant</b> to attend SIGSPATIAL 2026." },
+  { date: "2026-10", text: "Received an <b>ACM SIGSPATIAL Travel Grant</b> to attend SIGSPATIAL 2026." },
   { date: "2026-08", text: "Our paper <i>PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment</i> has been accepted as a research paper (short) at <b>ACM SIGSPATIAL 2026</b>.", link: "https://arxiv.org/abs/2608.24133" },
   { date: "2026-03", text: "Oral presentation at <b>AAG 2026</b> in San Francisco on semantic geospatial retrieval of urban outdoor spaces with MLLMs." },
   { date: "2026", text: "Book chapter <i>Impact of varying street view perspectives on urban perception: The case of Celoria Street in Milan</i> published by <b>Springer</b>.", link: "https://doi.org/10.1007/978-3-032-04711-3_24" },
@@ -263,7 +263,7 @@ const PROJECTS = [
 /* ---------- CV sections ---------- */
 const EDUCATION = [
   { org: "The University of British Columbia", detail: "Ph.D. Student", date: "Sep. 2026 – present", place: "Vancouver, Canada" },
-  { org: "IAAC – Universitat Politècnica de Catalunya (UPC)", detail: "M.Sc. Advanced Computation for Architecture & Design", date: "2022 – 2023", place: "Barcelona, Spain" },
+  { org: "IAAC – Universitat Politècnica de Catalunya (UPC)", detail: "M.Sc. Computation Design", date: "2022 – 2023", place: "Barcelona, Spain" },
   { org: "Politecnico di Milano", detail: "M.Sc. Architecture – Built Environment – Interiors · 110/110", date: "2020 – 2023", place: "Milan, Italy" },
   { org: "Shanxi University", detail: "B.Eng. Architecture", date: "2015 – 2020", place: "Taiyuan, China" },
 ];
@@ -277,7 +277,7 @@ const EXPERIENCE = [
 const HONORS = [
   { text: "Canada Impact+ Research Training Award (Doctoral)", detail: "Natural Sciences and Engineering Research Council of Canada (NSERC) · Track: Advanced digital technologies (AI, quantum, cybersecurity)", date: "Sep. 2026" },
   { text: "Four Year Doctoral Fellowship (4YF), The University of British Columbia", date: "Sep. 2026" },
-  { text: "ACM SIGSPATIAL Travel Grant", date: "2026" },
+  { text: "ACM SIGSPATIAL Travel Grant", date: "Oct. 2026" },
   { text: "COST (European Cooperation in Science & Technology) Grant", date: "Jul. 2025" },
   { text: "NextGenerationEU Research Scholarship (MED4PED)", date: "Feb. 2024" },
   { text: "Graduated with Full Marks and Honors, Politecnico di Milano", date: "Oct. 2023" },
