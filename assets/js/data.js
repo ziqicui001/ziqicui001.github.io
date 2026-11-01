@@ -263,7 +263,7 @@ const PROJECTS = [
 /* ---------- CV sections ---------- */
 const EDUCATION = [
   { org: "The University of British Columbia", detail: "Ph.D. Student", date: "Sep. 2026 – present", place: "Vancouver, Canada" },
-  { org: "IAAC – Universitat Politècnica de Catalunya (UPC)", detail: "M.Sc. Computation Design", date: "2022 – 2023", place: "Barcelona, Spain" },
+  { org: "IAAC – Universitat Politècnica de Catalunya (UPC)", detail: "M.Sc. Computational Design", date: "2022 – 2023", place: "Barcelona, Spain" },
   { org: "Politecnico di Milano", detail: "M.Sc. Architecture – Built Environment – Interiors · 110/110", date: "2020 – 2023", place: "Milan, Italy" },
   { org: "Shanxi University", detail: "B.Eng. Architecture", date: "2015 – 2020", place: "Taiyuan, China" },
 ];
