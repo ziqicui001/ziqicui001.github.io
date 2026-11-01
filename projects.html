@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziqi Cui - Projects</title>
+  <meta name="description" content="Research projects, previous works and lab activities by Ziqi Cui.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Ziqi Cui</a>
+      <button class="nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html" class="active">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero small">
+    <div class="hero-bg" style="background-image:url('assets/img/hero-3a25c06e.jpg')"></div>
+    <div class="hero-inner">
+      <div class="hero-kicker">Research &amp; Design</div>
+      <h1>Projects</h1>
+      <p>Current research, previous design work, and activities at the LABSIMURB Urban Simulation Lab. Click thumbnails to enlarge.</p>
+    </div>
+  </header>
+
+  <main>
+    <nav class="toc">
+      <a href="#current">Current Research</a>
+      <a href="#previous">Previous Works</a>
+      <a href="#lab">Lab Activities</a>
+    </nav>
+
+    <section class="card flush" id="current">
+      <div class="card-title"><i class="fa-solid fa-flask"></i> Current Research</div>
+      <div id="projects-research"></div>
+    </section>
+
+    <section class="card flush" id="previous">
+      <div class="card-title"><i class="fa-solid fa-compass-drafting"></i> Previous Works</div>
+      <div id="projects-previous"></div>
+    </section>
+
+    <section class="card" id="lab">
+      <div class="card-title"><i class="fa-solid fa-people-group"></i> Lab Activities &amp; Teaching</div>
+      <div class="lab-grid" id="projects-lab"></div>
+    </section>
+  </main>
+
+  <div id="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <img alt="">
+    <button class="lb-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lb-counter"></div>
+  </div>
+
+  <footer>
+    <span>© <span id="year"></span> Ziqi Cui · <a href="mailto:ziqi.cui@polimi.it">ziqi.cui@polimi.it</a></span>
+    <span>Last updated: Oct 2026</span>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
